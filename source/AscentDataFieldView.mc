@@ -10,17 +10,24 @@ class AscentDataFieldView extends Ui.SimpleDataField {
 	var Npoints;
 	var MaxN=10;					//number of points in the buffer arrays
 	var lastPos;
-	var slopeThreshold = 0.03;
+	var slopeThreshold = 0.03;		//minimum slope to be considered an ascent
+	var stopThreshold = 10;			//descent (m) that triggers the end of the ascent
 	
-	var lastAscentStatus;
+	var lastAscentStatus;			//1: if going up, 0 otherwise
+	var ascentActive; 
+	
+	var ascentElevationEnd;			//last detected elevation while ascent status==1
+	var ascentTimerEnd;
+	
 	var ascentElevationStart;
 	var ascentTimerStart;
+	
 	
 	var lastVal;
 	
     //! Set the label of the data field here.
     function initialize() {
-        label = "Last Hill";
+        label = "Ascent Speed";
         Npoints = 0;
         lastAltitudes=new [MaxN];
         lastPositions=new [MaxN];
@@ -32,6 +39,7 @@ class AscentDataFieldView extends Ui.SimpleDataField {
         lastAscentStatus = 0;
         ascentElevationStart = 0;
         ascentTimerStart = 0;
+        ascentActive = false;
     }
 
     //! The given info object contains all the current workout
@@ -58,66 +66,83 @@ class AscentDataFieldView extends Ui.SimpleDataField {
 	      		lastPositions[Npoints]=pos;
 	      		lastTimes[Npoints] = time;
 	      		Npoints = Npoints+1;
-	      		lastVal=Npoints;
+	      		return null;
     		}
-    		else
+    		
+    		//first we store the new data		
+    		UpdateArrays(alt, pos, time);
+	    	
+		    //===========================================
+		    //after the arrays are ready we can check
+		
+		    var newStatus = AscentStatus();
+		    //check if we are going up
+		    if(newStatus==0)
 		    {
-				  //updates the arrays with the FIFO logic
-				  for(var i=0; i<MaxN-1; i++)						//up to MaxN-1 !
-				  {
-				    lastAltitudes[i]=lastAltitudes[i+1];
-				    lastPositions[i]=lastPositions[i+1];
-				    lastTimes[i]=lastTimes[i+1];
-				  }
-				  
-				  //new value in
-				  lastAltitudes[MaxN-1]=alt;
-				  lastPositions[MaxN-1]=pos;
-				  lastTimes[MaxN-1]=time;
-			      
-			      //===========================================
-			      //after the arrays are ready we can check
-			
-			      var newStatus = AscentStatus();
-			      //check if we are going up
-			      if(newStatus==0)
-			      {
-						//not going up (enough)
-						if(lastAscentStatus==0)
-						{
-						  lastVal=-999;
-						}
-						else
-						{
-						  //not going up anymore!
-						  //we should send an alert that the ascent is over
-						  //Att.playTone(TONE_DISTANCE_ALERT);
-						  lastAscentStatus = 0;
-						  lastVal=-99;
-						}
-			      }
-			      else
-			      {
-				  	//going up
-				    if(lastAscentStatus==0)
-			        {
+				//not going up (enough)
+				if(ascentActive)
+				{
+					//if the ascent is still active, we check whether to keep it active
+					if(ascentElevationEnd-alt>stopThreshold)
+					{
+						//the ascent is really over!
+						ascentActive=false;
+					}
+					
+					//keep displaying the value calculated when it was going up
+					lastVal = ascentElevationEnd-ascentElevationStart;
+				}
+				else
+				{
+					lastVal = -999;
+				}
+				
+				
+		    }
+		    else
+		    {
+			  	//going up
+				
+			    if(ascentActive==false)
+		        {
 			         //first detection
 			         //Att.playTone(TONE_DISTANCE_ALERT);
 			         ascentElevationStart = lastAltitudes[0];
 			         ascentTimerStart = lastTimes[0];
 			         lastAscentStatus = 1;
-			        } 
-			        
-			        //computing the average speed so far
-			        var speed=(alt-ascentElevationStart)/(time-ascentTimerStart+0.01)/(3600.0*1000.0);
-			        lastVal=alt-ascentElevationStart;
-			   	  }
-			}
+			         ascentActive = true;
+		        } 
+		        
+		        ascentElevationEnd = alt;
+		        
+		        //computing the average speed so far
+		        var speed=(ascentElevationEnd-ascentElevationStart)/(time-ascentTimerStart+0.01)/(3600.0*1000.0);
+		        lastVal=alt-ascentElevationStart;
+		   	}
 		}
 	
 		return lastVal;
 		
     }
+    
+    function UpdateArrays(alt,pos,time)
+    {
+	    //updates the arrays with the FIFO logic
+		for(var i=0; i<MaxN-1; i++)						//up to MaxN-1 !
+		{
+			lastAltitudes[i]=lastAltitudes[i+1];
+			lastPositions[i]=lastPositions[i+1];
+			lastTimes[i]=lastTimes[i+1];
+		}
+		  
+		//new value in
+		lastAltitudes[MaxN-1]=alt;
+		lastPositions[MaxN-1]=pos;
+		lastTimes[MaxN-1]=time;
+				      
+    }
+    
+    
     
     //returns 1 if currently going up (slope>threshold), 0 otherwise
     function AscentStatus() 

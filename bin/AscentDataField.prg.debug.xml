@@ -1,62 +1,67 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <debugInfo>
 <pcToLineNum>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="23" pc="268435458" symbol="initialize"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="24" pc="268435471" symbol="initialize"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="25" pc="268435484" symbol="initialize"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="26" pc="268435501" symbol="initialize"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="27" pc="268435518" symbol="initialize"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="29" pc="268435535" symbol="initialize"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="30" pc="268435548" symbol="initialize"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="32" pc="268435561" symbol="initialize"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="33" pc="268435574" symbol="initialize"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="34" pc="268435587" symbol="initialize"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="41" pc="268435603" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="42" pc="268435613" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="43" pc="268435623" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="45" pc="268435633" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="47" pc="268435640" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="50" pc="268435645" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="52" pc="268435675" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="54" pc="268435685" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="57" pc="268435705" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="58" pc="268435724" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="59" pc="268435743" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="60" pc="268435762" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="61" pc="268435784" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="66" pc="268435803" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="68" pc="268435830" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="69" pc="268435858" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="70" pc="268435886" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="74" pc="268435927" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="75" pc="268435952" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="76" pc="268435977" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="81" pc="268436002" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="83" pc="268436015" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="86" pc="268436026" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="88" pc="268436043" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="95" pc="268436065" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="96" pc="268436078" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="102" pc="268436100" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="106" pc="268436117" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="107" pc="268436139" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="108" pc="268436161" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="112" pc="268436177" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="113" pc="268436220" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="118" pc="268436242" symbol="compute"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="126" pc="268436254" symbol="AscentStatus"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="127" pc="268436294" symbol="AscentStatus"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="129" pc="268436305" symbol="AscentStatus"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="131" pc="268436315" symbol="AscentStatus"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="133" pc="268436358" symbol="AscentStatus"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="135" pc="268436372" symbol="AscentStatus"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="137" pc="268436381" symbol="AscentStatus"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="7" pc="268436473" symbol="&lt;init&gt;"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="8" pc="268436490" symbol="&lt;init&gt;"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="9" pc="268436507" symbol="&lt;init&gt;"/>
-<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldApp.mc" lineNum="15" pc="268436396" symbol="getInitialView"/>
-<entry filename="Rez" lineNum="5" pc="268436557" symbol="&lt;init&gt;"/>
-<entry filename="Rez" lineNum="10" pc="268436544" symbol="&lt;init&gt;"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="30" pc="268435458" symbol="initialize"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="31" pc="268435471" symbol="initialize"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="32" pc="268435484" symbol="initialize"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="33" pc="268435501" symbol="initialize"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="34" pc="268435518" symbol="initialize"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="36" pc="268435535" symbol="initialize"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="37" pc="268435548" symbol="initialize"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="39" pc="268435561" symbol="initialize"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="40" pc="268435574" symbol="initialize"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="41" pc="268435587" symbol="initialize"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="42" pc="268435600" symbol="initialize"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="49" pc="268435613" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="50" pc="268435623" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="51" pc="268435633" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="53" pc="268435643" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="55" pc="268435650" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="58" pc="268435655" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="60" pc="268435685" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="62" pc="268435695" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="65" pc="268435715" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="66" pc="268435734" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="67" pc="268435753" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="68" pc="268435772" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="69" pc="268435794" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="73" pc="268435799" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="78" pc="268435817" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="80" pc="268435830" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="83" pc="268435841" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="86" pc="268435852" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="89" pc="268435875" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="93" pc="268435888" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="97" pc="268435916" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="106" pc="268435938" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="110" pc="268435952" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="111" pc="268435974" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="112" pc="268435996" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="113" pc="268436009" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="116" pc="268436022" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="119" pc="268436032" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="120" pc="268436081" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="124" pc="268436103" symbol="compute"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="131" pc="268436115" symbol="UpdateArrays"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="133" pc="268436142" symbol="UpdateArrays"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="134" pc="268436170" symbol="UpdateArrays"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="135" pc="268436198" symbol="UpdateArrays"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="139" pc="268436239" symbol="UpdateArrays"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="140" pc="268436264" symbol="UpdateArrays"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="141" pc="268436289" symbol="UpdateArrays"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="151" pc="268436317" symbol="AscentStatus"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="152" pc="268436357" symbol="AscentStatus"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="154" pc="268436368" symbol="AscentStatus"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="156" pc="268436378" symbol="AscentStatus"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="158" pc="268436421" symbol="AscentStatus"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="160" pc="268436435" symbol="AscentStatus"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="162" pc="268436444" symbol="AscentStatus"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="7" pc="268436536" symbol="&lt;init&gt;"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="8" pc="268436553" symbol="&lt;init&gt;"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldView.mc" lineNum="9" pc="268436570" symbol="&lt;init&gt;"/>
+<entry filename="/Users/andrea/Documents/eclipse/AscentDataField/source/AscentDataFieldApp.mc" lineNum="15" pc="268436459" symbol="getInitialView"/>
+<entry filename="Rez" lineNum="5" pc="268436620" symbol="&lt;init&gt;"/>
+<entry filename="Rez" lineNum="10" pc="268436607" symbol="&lt;init&gt;"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8389359" symbol="&lt;gre&gt;"/>
@@ -104,8 +109,9 @@
 <entry id="8389358" symbol="&lt;deu&gt;"/>
 <entry id="8389548" symbol="&lt;tha&gt;"/>
 <entry field="true" id="8388807" symbol="BLE_REQUEST_TOO_LARGE"/>
+<entry id="25" method="true" symbol="UpdateArrays"/>
 <entry id="8388819" method="true" symbol="makeImageRequest"/>
-<entry id="22" module="true" symbol="Menus"/>
+<entry id="27" module="true" symbol="Menus"/>
 <entry id="3" module="true" symbol="globals_Rez_Drawables"/>
 <entry id="8388630" module="true" symbol="Toybox_Position"/>
 <entry id="8389354" symbol="&lt;dut&gt;"/>
@@ -143,6 +149,7 @@
 <entry field="true" id="8388742" symbol="currentPower"/>
 <entry id="8389440" object="true" symbol="GeocacheProgrammableData"/>
 <entry id="8389031" object="true" symbol="Confirmation"/>
+<entry field="true" id="20" symbol="ascentElevationEnd"/>
 <entry id="8389383" method="true" symbol="getObscurityFlags"/>
 <entry id="8389193" method="true" symbol="getTextWidthInPixels"/>
 <entry id="8389069" method="true" symbol="setLocation"/>
@@ -150,7 +157,7 @@
 <entry id="8388659" method="true" symbol="testAbs"/>
 <entry field="true" id="8388989" symbol="dutyCycle"/>
 <entry id="8389043" object="true" symbol="ProgressBar"/>
-<entry field="true" id="25" symbol="AppName"/>
+<entry field="true" id="30" symbol="AppName"/>
 <entry field="true" id="8388927" symbol="SECONDS_PER_YEAR"/>
 <entry id="8389418" object="true" symbol="CommonData"/>
 <entry id="8389114" method="true" symbol="getType"/>
@@ -166,7 +173,7 @@
 <entry id="8389184" method="true" symbol="drawLine"/>
 <entry id="8389250" symbol="timestamp"/>
 <entry id="8388877" method="true" symbol="createSession"/>
-<entry field="true" id="24" symbol="LauncherIcon"/>
+<entry field="true" id="29" symbol="LauncherIcon"/>
 <entry id="8388616" module="true" symbol="Toybox_Communications"/>
 <entry field="true" id="8389380" symbol="OBSCURE_TOP"/>
 <entry field="true" id="8389201" symbol="MSG_ID_SEARCH_TIMEOUT"/>
@@ -277,7 +284,7 @@
 <entry id="8389142" method="true" symbol="getProfile"/>
 <entry id="8389188" method="true" symbol="fillRectangle"/>
 <entry id="8388729" object="true" symbol="Info"/>
-<entry id="23" module="true" symbol="Layouts"/>
+<entry id="28" module="true" symbol="Layouts"/>
 <entry id="8388710" object="true" symbol="Stats"/>
 <entry field="true" id="8389152" symbol="FONT_XTINY"/>
 <entry id="8389189" method="true" symbol="fillRoundedRectangle"/>
@@ -355,6 +362,7 @@
 <entry field="true" id="8389244" symbol="deviceNumber"/>
 <entry id="8389467" object="true" symbol="WeightScale"/>
 <entry id="8388761" object="true" symbol="Double"/>
+<entry field="true" id="17" symbol="stopThreshold"/>
 <entry field="true" id="8388865" symbol="SUB_SPORT_ELLIPTICAL"/>
 <entry field="true" id="8389166" symbol="COLOR_DK_GREEN"/>
 <entry id="8389259" method="true" symbol="sendAcknowledge"/>
@@ -397,7 +405,7 @@
 <entry field="true" id="8389204" symbol="MSG_ID_TRANSMIT_POWER"/>
 <entry field="true" id="8389154" symbol="FONT_SMALL"/>
 <entry id="8388921" object="true" symbol="Duration"/>
-<entry field="true" id="17" symbol="lastAscentStatus"/>
+<entry field="true" id="18" symbol="lastAscentStatus"/>
 <entry id="8388673" method="true" symbol="testLessThanEqual"/>
 <entry field="true" id="8388929" symbol="SECONDS_PER_HOUR"/>
 <entry field="true" id="8389208" symbol="MSG_ID_PROXIMITY_SEARCH"/>
@@ -414,7 +422,7 @@
 <entry field="true" id="8388856" symbol="SUB_SPORT_INDOOR_CYCLING"/>
 <entry field="true" id="8389382" symbol="OBSCURE_BOTTOM"/>
 <entry id="8389287" method="true" symbol="saveProperties"/>
-<entry field="true" id="20" symbol="lastVal"/>
+<entry field="true" id="24" symbol="lastVal"/>
 <entry field="true" id="8388727" symbol="totalMemory"/>
 <entry field="true" id="8389400" symbol="tonesOn"/>
 <entry field="true" id="8388756" symbol="averageDistance"/>
@@ -484,6 +492,7 @@
 <entry id="8389565" method="true" symbol="encodeURL"/>
 <entry id="8389285" method="true" symbol="clearProperties"/>
 <entry field="true" id="8388834" symbol="SPORT_FITNESS_EQUIPMENT"/>
+<entry field="true" id="19" symbol="ascentActive"/>
 <entry id="8389369" symbol="&lt;spa&gt;"/>
 <entry id="8388788" method="true" symbol="put"/>
 <entry id="8389537" object="true" symbol="TextPicker"/>
@@ -500,7 +509,7 @@
 <entry field="true" id="8389530" symbol="userProfileExchangeSupport"/>
 <entry id="8389236" object="true" symbol="Message"/>
 <entry field="true" id="8388740" symbol="maxSpeed"/>
-<entry field="true" id="19" symbol="ascentTimerStart"/>
+<entry field="true" id="23" symbol="ascentTimerStart"/>
 <entry id="8389322" symbol="april"/>
 <entry id="8389304" method="true" symbol="testInfoString"/>
 <entry field="true" id="8388839" symbol="SPORT_AMERICAN_FOOTBALL"/>
@@ -668,7 +677,7 @@
 <entry field="true" id="8388918" symbol="FORMAT_MEDIUM"/>
 <entry field="true" id="8389012" symbol="CLICK_TYPE_HOLD"/>
 <entry field="true" id="8389229" symbol="NETWORK_PUBLIC"/>
-<entry field="true" id="18" symbol="ascentElevationStart"/>
+<entry field="true" id="22" symbol="ascentElevationStart"/>
 <entry id="8389053" object="true" symbol="BitmapResource"/>
 <entry field="true" id="8388982" symbol="TONE_POWER"/>
 <entry field="true" id="8388842" symbol="SPORT_CROSS_COUNTRY_SKIING"/>
@@ -910,6 +919,7 @@
 <entry id="8389512" method="true" symbol="getCalculatedPower"/>
 <entry field="true" id="8388872" symbol="SUB_SPORT_MATCH"/>
 <entry id="8389567" method="true" symbol="getNumberOfTests"/>
+<entry field="true" id="21" symbol="ascentTimerEnd"/>
 <entry field="true" id="8389456" symbol="WEIGHT_SCALE_STATUS_SEARCHING"/>
 <entry id="8389136" method="true" symbol="getKey"/>
 <entry id="8388758" object="true" symbol="Number"/>
@@ -949,7 +959,7 @@
 <entry id="8388685" method="true" symbol="testLocationRadians"/>
 <entry field="true" id="8388990" symbol="KEY_POWER"/>
 <entry field="true" id="8388809" symbol="BLE_CONNECTION_UNAVAILABLE"/>
-<entry id="21" method="true" symbol="AscentStatus"/>
+<entry id="26" method="true" symbol="AscentStatus"/>
 <entry id="8389438" object="true" symbol="TorqueEfficiency"/>
 <entry field="true" id="8389246" symbol="transmissionType"/>
 <entry id="8388882" method="true" symbol="save"/>
@@ -1043,6 +1053,12 @@
 <functionEntry name="compute">
 <param id="info"/>
 <documentation><![CDATA[<div class="description"> The given info object contains all the current workout<br/> information. Calculate a value and return it in this method.<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="UpdateArrays">
+<param id="alt"/>
+<param id="pos"/>
+<param id="time"/>
+<documentation/>
 </functionEntry>
 <functionEntry name="AscentStatus">
 <documentation/>
