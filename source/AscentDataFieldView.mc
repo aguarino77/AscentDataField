@@ -38,78 +38,83 @@ class AscentDataFieldView extends Ui.SimpleDataField {
     //! information. Calculate a value and return it in this method. 
     function compute(info) {
         // See Activity.Info in the documentation for available information.
-
 		var alt = info.altitude;
 		var pos = info.elapsedDistance;
 		var time = info.timerTime;
-
+		
+		if(pos==null)
+		{
+			return null;
+		}
+		
 		if(alt!=null && (pos-lastPos)>0.1)
 		{
 			lastPos = pos;	
-			if(Npoints<MaxN)
-			{
-			//filling the array during the activity startup
-				lastAltitudes[Npoints]=alt;
-				lastPositions[Npoints]=pos;
-				lastTimes[Npoints] = time;
-				Npoints = Npoints+1;
-				lastVal=Npoints;
-			}
-			else
-			{
-				//and updates the arrays with the FIFO logic
-				for(var i=0; i<MaxN-1; i++)						//up to MaxN-1 !
-				{
-					lastAltitudes[i]=lastAltitudes[i+1];
-					lastPositions[i]=lastPositions[i+1];
-					lastTimes[i]=lastTimes[i+1];
-				}
-				
-				//new value in
-				lastAltitudes[MaxN-1]=alt;
-				lastPositions[MaxN-1]=pos;
-				lastTimes[MaxN-1]=time;
-				
-				//===========================================
-				//after the arrays are ready we can check
-
-				var newStatus = AscentStatus();
-				//check if we are going up
-				if(newStatus==0)
-				{
-					//not going up (enough)
-					if(lastAscentStatus==0)
-					{
-						lastVal=-999;
-					}
-					else
-					{
-						//not going up anymore!
-						//we should send an alert that the ascent is over
-						//Att.playTone(TONE_DISTANCE_ALERT);
-						lastAscentStatus = 0;
-						lastVal=-99;
-					}
-				}
-				else
-				{
-					//going up
-					if(lastAscentStatus==0)
-					{
-						//first detection
-						//Att.playTone(TONE_DISTANCE_ALERT);
-						ascentElevationStart = lastAltitudes[0];
-						ascentTimerStart = lastTimes[0];
-						lastAscentStatus = 1;
-					} 
-					
-					//computing the average speed so far
-					var speed=(alt-ascentElevationStart)/(time-ascentTimerStart+0.01)/(3600.0*1000.0);
-					lastVal=alt-ascentElevationStart;
-				}
+		    
+		    if(Npoints<MaxN)
+    		{
+	    		//filling the array during the activity startup
+	      		lastAltitudes[Npoints]=alt;
+	      		lastPositions[Npoints]=pos;
+	      		lastTimes[Npoints] = time;
+	      		Npoints = Npoints+1;
+	      		lastVal=Npoints;
+    		}
+    		else
+		    {
+				  //updates the arrays with the FIFO logic
+				  for(var i=0; i<MaxN-1; i++)						//up to MaxN-1 !
+				  {
+				    lastAltitudes[i]=lastAltitudes[i+1];
+				    lastPositions[i]=lastPositions[i+1];
+				    lastTimes[i]=lastTimes[i+1];
+				  }
+				  
+				  //new value in
+				  lastAltitudes[MaxN-1]=alt;
+				  lastPositions[MaxN-1]=pos;
+				  lastTimes[MaxN-1]=time;
+			      
+			      //===========================================
+			      //after the arrays are ready we can check
+			
+			      var newStatus = AscentStatus();
+			      //check if we are going up
+			      if(newStatus==0)
+			      {
+						//not going up (enough)
+						if(lastAscentStatus==0)
+						{
+						  lastVal=-999;
+						}
+						else
+						{
+						  //not going up anymore!
+						  //we should send an alert that the ascent is over
+						  //Att.playTone(TONE_DISTANCE_ALERT);
+						  lastAscentStatus = 0;
+						  lastVal=-99;
+						}
+			      }
+			      else
+			      {
+				  	//going up
+				    if(lastAscentStatus==0)
+			        {
+			         //first detection
+			         //Att.playTone(TONE_DISTANCE_ALERT);
+			         ascentElevationStart = lastAltitudes[0];
+			         ascentTimerStart = lastTimes[0];
+			         lastAscentStatus = 1;
+			        } 
+			        
+			        //computing the average speed so far
+			        var speed=(alt-ascentElevationStart)/(time-ascentTimerStart+0.01)/(3600.0*1000.0);
+			        lastVal=alt-ascentElevationStart;
+			   	  }
 			}
 		}
-
+	
 		return lastVal;
 		
     }
