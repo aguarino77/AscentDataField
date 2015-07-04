@@ -14,13 +14,13 @@ class AscentDataFieldView extends Ui.SimpleDataField {
 	var stopThreshold = 10;			//descent (m) that triggers the end of the ascent
 	
 	var lastAscentStatus;			//1: if going up, 0 otherwise
-	var ascentActive; 
+	var ascentActive; 				//if the user is going up or not yet down enough to stop the ascent
 	
 	var ascentElevationEnd;			//last detected elevation while ascent status==1
-	var ascentTimerEnd;
+	var ascentTimerEnd;				//last detected time while ascent status ==1 
 	
-	var ascentElevationStart;
-	var ascentTimerStart;
+	var ascentElevationStart;		//first detected elevation while ascent status = 1
+	var ascentTimerStart;			//first detected time while ascent status =1
 	
 	
 	var lastVal;
@@ -66,7 +66,7 @@ class AscentDataFieldView extends Ui.SimpleDataField {
 	      		lastPositions[Npoints]=pos;
 	      		lastTimes[Npoints] = time;
 	      		Npoints = Npoints+1;
-	      		return "WAIT...";
+	      		return "WAIT..."+0;
     		}
     		
     		//first we store the new data		
