@@ -27,7 +27,7 @@ class AscentDataFieldView extends Ui.SimpleDataField {
 	
     //! Set the label of the data field here.
     function initialize() {
-        label = "Ascent Speed";
+        label = "Last Ascent";
         Npoints = 0;
         lastAltitudes=new [MaxN];
         lastPositions=new [MaxN];
@@ -66,7 +66,7 @@ class AscentDataFieldView extends Ui.SimpleDataField {
 	      		lastPositions[Npoints]=pos;
 	      		lastTimes[Npoints] = time;
 	      		Npoints = Npoints+1;
-	      		return null;
+	      		return "WAIT...";
     		}
     		
     		//first we store the new data		
@@ -90,11 +90,12 @@ class AscentDataFieldView extends Ui.SimpleDataField {
 					}
 					
 					//keep displaying the value calculated when it was going up
-					lastVal = ascentElevationEnd-ascentElevationStart;
+					lastVal = "(" + ascentElevationEnd-ascentElevationStart + ")" ;
 				}
 				else
 				{
-					lastVal = -999;
+					//if the ascent is not active any more we display the descent
+					lastVal = alt - ascentElevationEnd;
 				}
 				
 				
@@ -116,8 +117,8 @@ class AscentDataFieldView extends Ui.SimpleDataField {
 		        ascentElevationEnd = alt;
 		        
 		        //computing the average speed so far
-		        var speed=(ascentElevationEnd-ascentElevationStart)/(time-ascentTimerStart+0.01)/(3600.0*1000.0);
-		        lastVal=alt-ascentElevationStart;
+		        //var speed=(ascentElevationEnd-ascentElevationStart)/(time-ascentTimerStart+0.01)/(3600.0*1000.0);
+		        lastVal= alt-ascentElevationStart;
 		   	}
 		}
 	
@@ -153,6 +154,7 @@ class AscentDataFieldView extends Ui.SimpleDataField {
 		{
 			ds=0.01;
 		}
+		
 		var slope=(lastAltitudes[MaxN-1]-lastAltitudes[0])/ds;
 		
 		if(slope>slopeThreshold)
